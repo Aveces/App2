@@ -20,7 +20,7 @@ def print_name():
 
 if 'PORT' in os.environ:
     #app running on Heroku
-    app.run(host=0.0.0.0", port=int(os.environ["PORT"]))
+    app.run(host="0.0.0.0", port=int(os.environ["PORT"]))
 else:
     # app running locally (by typing: localhost:5000)
     app.run(debug=True)
